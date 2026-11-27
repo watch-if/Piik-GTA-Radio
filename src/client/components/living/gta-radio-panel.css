@@ -1,0 +1,113 @@
+.lr-gta-radio {
+  box-sizing: border-box;
+  width: min(100%, 36rem);
+  min-width: 0;
+  margin: 0.5rem auto;
+  padding: 0.8rem;
+  border: 1px solid #634052;
+  border-radius: 1rem;
+  background: radial-gradient(ellipse at top right, #49243d, #201729 60%, #151321);
+  color: #fff4f2;
+}
+
+.lr-gta-radio-heading {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-block-end: 0.65rem;
+  font-weight: 700;
+}
+
+.lr-gta-radio-signal {
+  color: #ffaf82;
+  letter-spacing: 0.1em;
+}
+
+.lr-gta-radio [role="status"] {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #f2c6d5;
+}
+
+.lr-gta-radio [role="status"]:empty {
+  display: none;
+}
+
+.lr-gta-radio-stations {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: clamp(5.7rem, 22%, 7.5rem);
+  gap: 0.45rem;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  padding: 0.2rem 0.2rem 0.55rem;
+  scrollbar-color: #ac708c #211827;
+}
+
+.lr-gta-radio-station {
+  display: grid;
+  grid-template-rows: 2.25rem auto;
+  justify-items: center;
+  align-items: start;
+  gap: 0.45rem;
+  scroll-snap-align: start;
+  padding: 0.6rem 0.3rem;
+  border: 1px solid #5b3b55;
+  border-radius: 0.65rem;
+  background: #30243b;
+  color: inherit;
+  font: 600 0.77rem/1.2 system-ui, sans-serif;
+  text-align: center;
+}
+
+.lr-gta-radio-icon {
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.55rem;
+  background: linear-gradient(145deg, #ffb484, #ea87b6);
+  color: #271629;
+  font: 700 1.45rem/1 "Segoe UI Symbol", system-ui, sans-serif;
+}
+
+.lr-gta-radio-station:nth-child(3n + 2) .lr-gta-radio-icon {
+  background: linear-gradient(145deg, #98f0df, #88aadb);
+}
+
+.lr-gta-radio-station:nth-child(3n) .lr-gta-radio-icon {
+  background: linear-gradient(145deg, #ffc991, #dba8ed);
+}
+
+.lr-gta-radio-station:hover:enabled,
+.lr-gta-radio-station[data-sent="true"] {
+  border-color: #ffb395;
+  background: #53304b;
+}
+
+.lr-gta-radio-station:focus-visible {
+  outline: 2px solid #ffd2ae;
+  outline-offset: 2px;
+}
+
+.lr-gta-radio-station:disabled {
+  opacity: 0.55;
+}
+
+.lr-gta-radio-icon {
+  font: 850 0.55rem/1.05 system-ui, sans-serif;
+  white-space: pre-line;
+  text-align: center;
+}
+
+.lr-gta-radio-station:first-child .lr-gta-radio-icon {
+  font: 700 1.35rem/1 "Segoe UI Symbol", system-ui, sans-serif;
+  background: #cabfd6;
+}
+
+.lr-gta-radio-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
