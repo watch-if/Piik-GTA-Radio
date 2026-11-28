@@ -33,6 +33,16 @@ watch in their browsers.
 
 ## GTA V radio add-on
 
+### Radio selector preview
+
+![Desktop and mobile-width previews of the GTA V radio selector](docs/images/piik-radio-preview.jpg)
+
+- Browse 21 stations in a compact horizontal strip. Tap or click a visible station, use the arrow buttons, or swipe on mobile. The station list wraps in both directions.
+- On desktop, use Shift + scroll, a horizontal trackpad gesture, or Left / Right while the selector has focus. Side cards highlight on hover.
+- The HUD shows the station, genre, and known frequency, with a five-bar visualizer and a separate OFF control. The game bridge does not provide track titles.
+- Quick selections update the UI immediately and send the latest choice when the radio command interval allows it.
+
+
 This edition extends [TNTcraftHIM/Piik](https://github.com/TNTcraftHIM/Piik) with a Windows story-mode radio add-on for GTA V Enhanced. The single viewer can pick a station from the illustrated radio cards while the host drives. The extension selects stations. Songs play in the game.
 
 See the [GTA radio guide](native/gta-radio/README.zh-CN.md) for prerequisites, build commands and installation. You provide your own GTA V installation and a compatible Script Hook V runtime and SDK.

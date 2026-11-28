@@ -300,6 +300,10 @@ export const en: Record<CopyKey, string> = {
   "stats.audioConcealed": "Audio concealments",
 
   "gtaRadio.label": "Car radio",
+  "gtaRadio.previous": "Previous station",
+  "gtaRadio.next": "Next station",
+  "gtaRadio.frequencyUnknown": "Frequency unlisted",
+  "gtaRadio.trackUnavailable": "Track info unavailable from the game",
   "gtaRadio.choose": "Choose a station",
   "gtaRadio.off": "Radio off",
   "gtaRadio.sent": "Station request sent",

@@ -300,6 +300,10 @@ export const zh = {
   "stats.audioConcealed": "音频补偿",
 
   "gtaRadio.label": "车载电台",
+  "gtaRadio.previous": "上一台",
+  "gtaRadio.next": "下一台",
+  "gtaRadio.frequencyUnknown": "频率未标注",
+  "gtaRadio.trackUnavailable": "游戏未提供当前曲目信息",
   "gtaRadio.choose": "选择电台",
   "gtaRadio.off": "关闭电台",
   "gtaRadio.sent": "切台指令已发送",
